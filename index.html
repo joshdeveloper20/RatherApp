@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RatherApp</title>
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+
+		<!-- 
+			- FONT AWESOME CDN
+		 -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="hamburger">
+					<!-- <i class="fa-solid fa-xmark"></i> -->
+					<span class="fa-solid fa-bars"></span>
+				</div>
+				<a href="#" class="logo-link">
+					<img src="img/logo.png" alt="logo" />
+				</a>
+
+				<ul class="nav__wrapper">
+					<li><a href="#home" class="active">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<section class="hero__section" id="home">
+				<div class="carousel__container">
+					<div class="slides">
+						<div class="slide active">
+							<img src="img/heroImage-1.jpg" alt="heroImage-1" />
+
+							<div class="slide__content">
+								<h1 class="animate__animated animate__fadeInUp">
+									Mobile App Development
+								</h1>
+								<p
+									class="animate__animated animate__fadeInUp animate__delay-1s"
+								>
+									Since our establishment, we have been delivering high-quality
+									and sustainable software solutions for corporate purposes of
+									worldwide businesses.
+								</p>
+								<a
+									href="#"
+									class="animate__animated animate__fadeInUp animate__delay-2s"
+									>Get in touch</a
+								>
+							</div>
+						</div>
+
+						<div class="slide">
+							<img src="img/heroImage-4.avif" alt="heroImage-1" />
+
+							<div class="slide__content">
+								<h1 class="animate__animated animate__fadeInUp">
+									Experienced Team
+								</h1>
+								<p
+									class="animate__animated animate__fadeInUp animate__delay-1s"
+								>
+									We are a team of qualified software developers, aimed at
+									creating unique and powerful tools for your business &
+									everyday life.
+								</p>
+								<a
+									href="#"
+									class="animate__animated animate__fadeInUp animate__delay-2s"
+									>Get in touch</a
+								>
+							</div>
+						</div>
+
+						<div class="slide">
+							<img src="img/heroImage-3.jpg" alt="heroImage-1" />
+
+							<div class="slide__content">
+								<h1 class="animate__animated animate__fadeInUp">
+									Award-Winning Software
+								</h1>
+								<p
+									class="animate__animated animate__fadeInUp animate__delay-1s"
+								>
+									The software solutions developed by our company have been
+									numerously awarded for usability and innovative features.
+								</p>
+								<a
+									href="#"
+									class="animate__animated animate__fadeInUp animate__delay-2s"
+									>Get in touch</a
+								>
+							</div>
+						</div>
+					</div>
+					<button class="slider__btn slider__btn--left">&larr;</button>
+					<button class="slider__btn slider__btn--right">&rarr;</button>
+					<div class="dots">
+						<div class="dot active" data-dot="0" id="dot-0"></div>
+						<div class="dot" data-dot="1" id="dot-1"></div>
+						<div class="dot" data-dot="2" id="dot-2"></div>
+					</div>
+				</div>
+			</section>
+		</header>
+
+		<main>
+			<section class="service__section" id="services">
+				<div class="service__container">
+					<img
+						src="img/index-1.png"
+						alt="mobile"
+						class="mobile"
+						data-aos="fade-right"
+						data-aos-duration="2000"
+					/>
+					<div
+						class="service__boxes"
+						data-aos="fade-left"
+						data-aos-duration="2000"
+					>
+						<div class="box box-1">
+							<div class="centered__box">
+								<h3 class="box-1__title">What We <br />Offer</h3>
+								<div class="line"></div>
+								<a href="#" class="service__link">VIEW ALL SERVICES</a>
+							</div>
+						</div>
+
+						<div class="box box-2">
+							<img src="img/phone-call.png" alt="icon" />
+							<h3>CORPORATE <br />SOLUTIONS</h3>
+							<div class="line"></div>
+							<p>
+								Need specific software for your company? We are ready to develop
+								it!
+							</p>
+						</div>
+
+						<div class="box box-3">
+							<img src="img/headphones.png" alt="icon" />
+							<h3>CALL CENTER <br />SOLUTIONS</h3>
+							<div class="line"></div>
+							<p>
+								Our experts provide custom products of any complexity for call
+								centers.
+							</p>
+						</div>
+
+						<div class="box box-4">
+							<img src="img/inbox.png" alt="icon" />
+							<h3>CLOUD <br />DEVELOPMENT</h3>
+							<div class="line"></div>
+							<p>We can also offer you reliable cloud development solutions.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="services__cta">
+					<div class="cta__content" data-aos="zoom-in" data-aos-duration="2000">
+						<p class="cta__bold-text">Let's Develop Your Next Great App!</p>
+						<p class="cta__normal-text">
+							Do you need a unique software solution for your company? We know
+							how to help you!
+						</p>
+						<div class="cta__links">
+							<a href="#" class="cta__link">GET IN TOUCH</a>
+							<a href="#" class="cta__link">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="project__section" id="projects">
+				<div class="project__heading">
+					<h1 data-aos="zoom-in" data-aos-duration="2000">Latest Projects</h1>
+					<p data-aos="zoom-in" data-aos-duration="2000">
+						In our portfolio, you can browse the latest products developed for
+						our clients for different corporate purposes. Our qualified team of
+						interface designers and software developers is always ready to
+						create something unique for you.
+					</p>
+				</div>
+
+				<div class="filter__container">
+					<button class="filter-btn">
+						<span>Filter</span> <i class="fa-solid fa-caret-up"></i>
+					</button>
+					<div
+						class="button__container"
+						data-aos="zoom-in"
+						data-aos-duration="2000"
+					>
+						<button class="active" data-name="all">ALL</button>
+						<button data-name="mobile">MOBILE APPS</button>
+						<button data-name="software">CUSTOM SOFTWARE</button>
+						<button data-name="testing">QA & TESTING</button>
+						<button data-name="design">UX AND DESIGN</button>
+					</div>
+
+					<div class="filterable__cards">
+						<div class="card" data-name="design">
+							<img src="img/grid-gallery-1.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #1</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-name="mobile">
+							<img src="img/grid-gallery-2.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #2</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-name="software">
+							<img src="img/grid-gallery-3.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #3</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-name="testing">
+							<img src="img/grid-gallery-4.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #4</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-name="testing">
+							<img src="img/grid-gallery-5.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #5</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-name="mobile">
+							<img src="img/grid-gallery-6.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #6</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-name="software">
+							<img src="img/grid-gallery-7.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #7</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card" data-name="testing">
+							<img src="img/grid-gallery-8.jpg" alt="img" />
+							<div class="card__content">
+								<div class="card__content-centered">
+									<div class="card__heading">
+										<i class="fa-solid fa-magnifying-glass"></i>
+										<span>Project #8</span>
+									</div>
+									<p>
+										We work hard on every app to deliver top-notch features with
+										great UI that you won’t find anywhere else.s
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="experience__container">
+					<div class="left-side">
+						<h1 class="left-side__heading">10</h1>
+						<div class="left__content">
+							<p>Years Of <br />Experience</p>
+							<p>
+								RatherApp is a team of highly experienced app designers and
+								developers creating unique software for you.
+							</p>
+
+							<a href="#" class="exp__link">GET IN TOUCH</a>
+						</div>
+					</div>
+					<div class="right-side">
+						<div>
+							<p>
+								<span class="num" data-val="2">0</span
+								><span style="font-size: 7rem">k</span>
+							</p>
+							<p>APPS DEVELOPED</p>
+						</div>
+
+						<div>
+							<p class="num" data-val="40">00</p>
+							<p>CONSULTANTS</p>
+						</div>
+
+						<div>
+							<p class="num" data-val="12">00</p>
+							<p>AWARDS WON</p>
+						</div>
+
+						<div>
+							<p class="num" data-val="160">000</p>
+							<p>EMPLOYEES</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="sponsors__container">
+					<div class="img__frame">
+						<img src="img/clients-9.png" alt="" />
+					</div>
+					<div class="img__frame">
+						<img src="img/clients-3.png" alt="" />
+					</div>
+					<div class="img__frame">
+						<img src="img/clients-10.png" alt="" />
+					</div>
+					<div class="img__frame">
+						<img src="img/clients-11.png" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section class="team__section" id="team">
+				<div class="team__heading">
+					<h1>Meet The Team</h1>
+				</div>
+				<div class="team__container">
+					<div class="team">
+						<img src="img/team-11.jpg" alt="" />
+						<div class="info">
+							<h3>Ryan Wilson</h3>
+							<p>Director of Production</p>
+						</div>
+					</div>
+					<div class="team">
+						<img src="img/team-12.jpg" alt="" />
+						<div class="info">
+							<h3>Jill Peterson</h3>
+							<p>UI Designer</p>
+						</div>
+					</div>
+					<div class="team">
+						<img src="img/team-13.jpg" alt="" />
+						<div class="info">
+							<h3>Sam Robinson</h3>
+							<p>Senior Developer</p>
+						</div>
+					</div>
+					<div class="team">
+						<img src="img/team-14.jpg" alt="" />
+						<div class="info">
+							<h3>Mary Lee</h3>
+							<p>Software Developer</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="tabbed-container">
+					<div class="tabbed__component">
+						<h1 class="tabbed__heading-text">Get More With Us</h1>
+						<div class="tabbed__btn">
+							<button class="active">01</button>
+							<button>02</button>
+							<button>03</button>
+							<button>04</button>
+							<div class="tab__line"></div>
+						</div>
+
+						<div class="tabbed__contents">
+							<div class="tabbed__content active">
+								<h3>FREE APPS</h3>
+								<p>
+									We regularly upload new free apps to our website, which is
+									fully accessible to our clients and subscribers. You can also
+									find out about free apps in our blog.
+								</p>
+
+								<div class="tabbed__links">
+									<a href="#" class="tabbed__link">GET IN TOUCH</a>
+									<a href="#" class="tabbed__link">LEARN MORE</a>
+								</div>
+							</div>
+
+							<div class="tabbed__content">
+								<h3>GET SOCIAL</h3>
+								<p>
+									Every app we develop has built-in social support that allows
+									you to stay connected to your accounts on Facebook, Instagram,
+									Twitter and other networks.
+								</p>
+
+								<div class="tabbed__links">
+									<a href="#" class="tabbed__link">GET IN TOUCH</a>
+									<a href="#" class="tabbed__link">LEARN MORE</a>
+								</div>
+							</div>
+
+							<div class="tabbed__content">
+								<h3>CUSTOMER SERVICE</h3>
+								<p>
+									Every customer of RatherApp can get access to our friendly and
+									qualified 24/7 support via chat or phone. Fell free to ask us
+									any question!
+								</p>
+
+								<div class="tabbed__links">
+									<a href="#" class="tabbed__link">GET IN TOUCH</a>
+									<a href="#" class="tabbed__link">LEARN MORE</a>
+								</div>
+							</div>
+
+							<div class="tabbed__content">
+								<h3>GREAT USABILITY</h3>
+								<p>
+									All our apps are designed to have great usability in order to
+									easily operate our applications. That is why our software has
+									high ratings and lots of awards.
+								</p>
+
+								<div class="tabbed__links">
+									<a href="#" class="tabbed__link">GET IN TOUCH</a>
+									<a href="#" class="tabbed__link">LEARN MORE</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<img src="img/index-4.png" alt="" class="tabbed__img" />
+				</div>
+
+				<div class="testimonial__container">
+					<h1 class="test__heading">What People Say</h1>
+
+					<div class="testimonials">
+						<div class="testimonial">
+							<div class="desc">
+								<img src="img/user-11.jpg" alt="user image" />
+								<div class="test__info">
+									<p>Catherine Williams</p>
+									<p>Regular client</p>
+								</div>
+							</div>
+							<p class="test__detail">
+								RatherApp offers a high caliber of resources skilled in
+								Microsoft Azure .NET, mobile and Quality Assurance. They became
+								our true business partners over the past three years.
+							</p>
+						</div>
+
+						<div class="testimonial">
+							<div class="desc">
+								<img src="img/user-12.jpg" alt="user image" />
+								<div class="test__info">
+									<p>Rupert Wood</p>
+									<p>Regular client</p>
+								</div>
+							</div>
+							<p class="test__detail">
+								RatherApp powered us with a competent team to develop products
+								for banking services. The team has been delivering results
+								within budget and time, which is amazing.
+							</p>
+						</div>
+
+						<div class="testimonial">
+							<div class="desc">
+								<img src="img/user-20.jpg" alt="user image" />
+								<div class="test__info">
+									<p>Samantha Brown</p>
+									<p>Regular client</p>
+								</div>
+							</div>
+							<p class="test__detail">
+								RatherApp is a highly skilled and uniquely capable firm with
+								multitudes of talent on-board. We have collaborated on a number
+								of diverse projects that have been a great success.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news__container" id="news">
+				<h1 class="news__heading-text">Latest Blog Posts</h1>
+
+				<div class="blog__container">
+					<div class="blog">
+						<img src="img/post-10.jpg" alt="" />
+						<p class="blog-date"><span>02/</span><span> 04</span></p>
+						<div class="blog-detail">
+							<p class="blog-title">Benefits Of Async/Await</p>
+							<p class="blog-text">
+								Asynchronous functions are a good and bad thing in JavaScript.
+								The good side is that asynchronous functions are non-blocking
+								and...
+							</p>
+						</div>
+					</div>
+
+					<div class="blog">
+						<img src="img/post-11.jpg" alt="" />
+						<p class="blog-date"><span>02/</span><span> 17</span></p>
+						<div class="blog-detail">
+							<p class="blog-title">Key Considerations Of IPaaS</p>
+							<p class="blog-text">
+								Digital transformation requires cloud appropriate adoption,
+								legacy IT systems modernization, and Agile-based methodologies
+								for faster...
+							</p>
+						</div>
+					</div>
+
+					<div class="blog">
+						<img src="img/post-12.jpg" alt="" />
+						<p class="blog-date"><span>02/</span><span> 22</span></p>
+						<div class="blog-detail">
+							<p class="blog-title">Never Stop Optimizing Your Code</p>
+							<p class="blog-text">
+								In this tutorial, we will discuss the Hibernate Query Language.
+								HQL is an object-oriented query language. Hibernate Query...
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact__container" id="contact">
+				<div class="address__container">
+					<div class="address">
+						<img src="img/mobile-phone.png" alt="" />
+						<p>
+							+1 323-913-4688 <br />
+							+1 323-888-4554
+						</p>
+					</div>
+
+					<div class="address">
+						<img src="img/mobile-phone.png" alt="" />
+						<p>
+							4730 Crystal Springs Dr, <br />
+							Los Angeles, CA 90027
+						</p>
+					</div>
+
+					<div class="address">
+						<img src="img/mobile-phone.png" alt="" />
+						<p>
+							mail@demolink.org <br />
+							info@demolink.org
+						</p>
+					</div>
+				</div>
+
+				<div class="form__container">
+					<div class="form__heading">
+						<h2>Get In Touch</h2>
+						<p>
+							If you have any questions, just fill in the contact form, and we
+							will answer you shortly.
+						</p>
+					</div>
+					<form>
+						<div>
+							<div class="input__wrapper">
+								<input type="text" placeholder="Your Name" />
+								<input type="text" placeholder="E-mail" />
+								<input type="text" placeholder="Phone" />
+							</div>
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder="Message"
+							></textarea>
+
+							<button class="form__submit">SEND MESSAGE</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer__links">
+				<a href="#">UI DESIGN</a>
+				<a href="#">WINDOWS/MAC OS APPS</a>
+				<a href="#">ANDROID/IOS APPS</a>
+				<a href="#">CLOUD SOLUTIONS</a>
+				<a href="#">CUSTOMER SUPPORT</a>
+			</div>
+
+			<div class="footer__bottom">
+				<p>&copy; 2023 RatherApp</p>
+				<div class="social__links">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-brands fa-x-twitter"></i>
+					<i class="fa-brands fa-google-plus-g"></i>
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<p>All rights reserved</p>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				once: true,
+			});
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>

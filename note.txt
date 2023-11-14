@@ -1,0 +1,14 @@
+THE INTERSECTION OBSERVER API
+This API allows our code to basically observe changes to the way a certain targeted element intersect another element or the way it intersect the viewport.
+
+To Use The Intersection Observer Api we need to start by creating a new intersection observer.
+
+const obsCallback = function(entries, observer){
+ //entries is an array of the threshold entries.
+}
+const obsOptions = {
+    root: null, //it is the element that the target is intersecting
+    threshold: 0.1, //this is the percentage of intersection that which the observer callback will be called
+}
+const observer = new IntersectionObserver(obsCallback, obsOptions)
+observer.observe(section1)
